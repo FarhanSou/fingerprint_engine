@@ -26,9 +26,12 @@ if(!empty($_POST["data"])) {
         $is_duplicate = check_duplicate($pre_enrolled_finger_data, $enrolled_hands_list);
         // print_r($response);
         // die();
+        echo $is_duplicate;
+        // die();
         if($is_duplicate){
-            // return true;
-            echo getUserDetails($enrolled_hand_array[0]->id);
+            return $enrolled_hand_array[0]->id;
+            // echo json_encode(true);
+            // echo getUserDetails($enrolled_hand_array[0]->id);
             break;
         }
         
