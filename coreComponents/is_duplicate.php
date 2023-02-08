@@ -20,8 +20,8 @@ if(!empty($_POST["data"])) {
 
 
     $enrolled_hands_lists = $user_data->enrolled_hands_list;
-    print_r($enrolled_hands_lists);
-    die();
+//     print_r($enrolled_hands_lists);
+//     die();
 
     foreach ($enrolled_hands_lists as $enrolled_hands_list1) {
         $enrolled_hands_list = array($enrolled_hands_list1);
@@ -31,7 +31,7 @@ if(!empty($_POST["data"])) {
         // echo $is_duplicate;
         // die();
         if($is_duplicate == 1){
-            echo $enrolled_hand_array[0]->id;
+            echo $enrolled_hands_list[0]->id;
             echo 'sd';
             die();
             // echo json_encode(true);
