@@ -28,8 +28,8 @@ if(!empty($_POST["data"])) {
         // die();
         echo $is_duplicate;
         // die();
-        if($is_duplicate){
-            return $enrolled_hand_array[0]->id;
+        if($is_duplicate == 1){
+            echo $enrolled_hand_array[0]->id;
             // echo json_encode(true);
             // echo getUserDetails($enrolled_hand_array[0]->id);
             break;
