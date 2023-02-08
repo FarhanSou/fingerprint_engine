@@ -32,8 +32,8 @@ if(!empty($_POST["data"])) {
         // die();
         if($is_duplicate == 1){
             echo $enrolled_hands_list[0]->id;
-            echo 'sd';
-            die();
+            // echo 'sd';
+            // die();
             // echo json_encode(true);
             // echo getUserDetails($enrolled_hand_array[0]->id);
             break;
